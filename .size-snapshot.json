@@ -38,14 +38,14 @@
     }
   },
   "preact/index.cjs.js": {
-    "bundled": 4566,
-    "minified": 2379,
-    "gzipped": 1058
+    "bundled": 4435,
+    "minified": 2371,
+    "gzipped": 1052
   },
   "preact/index.js": {
-    "bundled": 4437,
-    "minified": 2257,
-    "gzipped": 1020,
+    "bundled": 4306,
+    "minified": 2249,
+    "gzipped": 1015,
     "treeshaked": {
       "rollup": {
         "code": 464,
@@ -57,14 +57,14 @@
     }
   },
   "react/index.cjs.js": {
-    "bundled": 3848,
-    "minified": 1668,
-    "gzipped": 795
+    "bundled": 3717,
+    "minified": 1660,
+    "gzipped": 791
   },
   "react/index.js": {
-    "bundled": 3769,
-    "minified": 1596,
-    "gzipped": 757,
+    "bundled": 3638,
+    "minified": 1588,
+    "gzipped": 752,
     "treeshaked": {
       "rollup": {
         "code": 14,
