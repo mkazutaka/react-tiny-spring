@@ -38,33 +38,33 @@
     }
   },
   "preact/index.cjs.js": {
-    "bundled": 4578,
-    "minified": 2387,
-    "gzipped": 1062
+    "bundled": 4566,
+    "minified": 2379,
+    "gzipped": 1058
   },
   "preact/index.js": {
-    "bundled": 4449,
-    "minified": 2269,
-    "gzipped": 1025,
+    "bundled": 4437,
+    "minified": 2257,
+    "gzipped": 1020,
     "treeshaked": {
       "rollup": {
         "code": 464,
         "import_statements": 33
       },
       "webpack": {
-        "code": 1482
+        "code": 1486
       }
     }
   },
   "react/index.cjs.js": {
-    "bundled": 3860,
-    "minified": 1680,
-    "gzipped": 800
+    "bundled": 3848,
+    "minified": 1668,
+    "gzipped": 795
   },
   "react/index.js": {
-    "bundled": 3781,
-    "minified": 1608,
-    "gzipped": 763,
+    "bundled": 3769,
+    "minified": 1596,
+    "gzipped": 757,
     "treeshaked": {
       "rollup": {
         "code": 14,

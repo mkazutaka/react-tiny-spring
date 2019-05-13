@@ -14,6 +14,8 @@ function createConfig(input, out) {
         { file: `${out}.cjs.js`, format: `cjs`, sourcemap: true }
       ],
       external: [
+        "react",
+        "preact",
         ...Object.keys(pkg.dependencies || {}),
         ...Object.keys(pkg.peerDependencies || {})
       ],
