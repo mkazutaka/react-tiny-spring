@@ -42,15 +42,8 @@ export function interpolateWithSpring(
   let isVelocity = Math.abs(velocity) <= config.precision;
   let isDisplacement =
     config.tension !== 0 ? Math.abs(to - position) <= config.precision : true;
-  const endOfAnimation = isOvershooting || (isVelocity && isDisplacement);
 
-  if (endOfAnimation) {
-    // if (property.value !== to) position = to;
-    property.done = endOfAnimation;
-  } else {
-    property.done = false;
-  }
-
+  property.done = isOvershooting || (isVelocity && isDisplacement);
   property.lastTime = time;
   property.value = position;
   property.velocity = velocity;
