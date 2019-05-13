@@ -1,4 +1,3 @@
-import {MutableRefObject, useRef} from "react";
 import { updateFrameFromScene } from "./updateFrameFromScene";
 import { interpolateWithSpring } from "./interpolator/interpolateWithSpring";
 import {
