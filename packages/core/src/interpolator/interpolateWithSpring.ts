@@ -43,6 +43,7 @@ export function interpolateWithSpring(
   let isDisplacement =
     config.tension !== 0 ? Math.abs(to - position) <= config.precision : true;
 
+  console.log(isOvershooting || (isVelocity && isDisplacement))
   property.done = isOvershooting || (isVelocity && isDisplacement);
   property.lastTime = time;
   property.value = position;

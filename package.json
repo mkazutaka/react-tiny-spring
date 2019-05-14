@@ -1,21 +1,27 @@
 {
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/jest/**",
+      "**/jest"
+    ]
+  },
   "scripts": {
     "build": "rollup -c",
-    "watch": "tsc -w",
-    "lint": "eslint packages/core/src/** --ext .ts,.tsx",
+    "watch": "rollup -c -w",
+    "lint": "eslint packages/**/src/** --ext .ts,.tsx",
     "lint:fix": "yarn lint --fix",
-    "test": "jest packages/core/test",
-    "test:watch": "jest --watch packages/core/test"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "start:preact": "preact watch packages/preact-examples/src/"
   },
   "dependencies": {},
   "devDependencies": {
     "@types/jest": "^24.0.12",
     "@types/node": "^12.0.0",
-    "@types/react": "^16.8.17",
     "@typescript-eslint/eslint-plugin": "^1.7.0",
     "@typescript-eslint/parser": "^1.7.0",
     "@typescript-eslint/typescript-estree": "^1.7.0",

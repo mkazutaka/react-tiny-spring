@@ -1,13 +1,8 @@
 language: node_js
 node_js: node
+before_install:
+  - curl -o- -L https://yarnpkg.com/install.sh | bash
+  - export PATH="$HOME/.yarn/bin:$PATH"
 cache: yarn
 script:
 - yarn test
-deploy:
-  provider: npm
-  email: paper.sheet.kami@gmail.com
-  api_key:
-    secure: CRXivdvqbMhX86i2/upRQ6BDL0lCPzo7q3kDLnMSAYcxPr6Bmtg0kQkkfBqCkZYzDkz+yS81SFrHZLfUAmHWmLECDNbrdBaEeQ0sHbqmExVAG0am1KeIhgDnkVg6+ldPnqAtWyjeibUHVPzL1YDbYQn7x/txxGf8WV3Sn6AviFaC2NTlyuSYBOiFHvsxO/Zi3D9xOGrIpp7G4H/MfBeYaQeRFfJE0mSkS/qSxR+CQMoxgq1vougugG4P3kiwINX5zR5mFqYYHH5b68msX59JD2ZH240cIjCcYKffk3gL+JNCuxs5uFnGx+vki5+jkhGXumtiu5GSvlBAusDQ0NYUEjAMpwbTRf7dDG3JqjHCfjuYCD43MFjA0YaCPDleDNXao4+3U/EH2Jinm0w58K7cS95dx20NNEa6MyLaTJn9zF/RC9UMkUXhv+qPb05vy7BnchQ9PObYuGfBIeaJ19MPfJxGM+f9scLdxx+TqCCMMSZulkugtpMNwo4FImxXHRoxagjuba32nvZR8u8PR66ffRJQcWtuOrkIXiTV6qB6H/mLAEoj0jwSC41PvR/6mwcC65R+JY+gMxJfYlkb+poD+FbAi7/diUGimsGGoqZkM8VitY3SEj1yX5d+hIO19mHRyhoIFxqzr7Ei55TTqXKcfbZTVDibG+E3Uz73TT0WSYY=
-  on:
-    tags: true
-    repo: mkazutaka/react-spring-tiny

@@ -1,2 +1,2 @@
-export * from './useSpring'
-export * from './AnimatedTypes'
+export * from "./useSpring";
+export * from "./AnimatedTypes";

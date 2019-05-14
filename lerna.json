@@ -1,8 +1,10 @@
 {
   "packages": [
-    "packages/*"
+    "packages/core",
+    "packages/preact",
+    "packages/react"
   ],
   "npmClient": "yarn",
   "useWorkspaces": true,
-  "version": "0.0.3"
+  "version": "0.0.4"
 }

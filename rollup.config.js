@@ -4,10 +4,10 @@ import resolve from "rollup-plugin-node-resolve";
 import { sizeSnapshot } from "rollup-plugin-size-snapshot";
 
 function createConfig(pkg) {
-  const include = `./packages/${pkg}/src`;
-  const input = `./packages/${pkg}/src/index.ts`;
-  const output = `./packages/${pkg}/dist/index`;
-  
+  const input = `packages/${pkg}/src/index.ts`;
+  const output = `packages/${pkg}/dist/index`;
+  const tsconfig = `packages/${pkg}/tsconfig.json`;
+
   return [
     {
       input: input,
@@ -15,23 +15,15 @@ function createConfig(pkg) {
         { file: `${output}.esm.js`, format: `esm`, sourcemap: true },
         { file: `${output}.cjs.js`, format: `cjs`, sourcemap: true }
       ],
-      external: [
-        "react",
-        "preact"
-      ],
+      external: ["react", "preact"],
       plugins: [
         typescript({
-          tsconfigDefaults: {
-            compilerOptions: {
-              declaration: true,
-            },
-          },
+          tsconfig: `${tsconfig}`,
           tsconfigOverride: {
             compilerOptions: {
-              target: 'esnext'
-            },
-            include: [include]
-          },
+              target: "esnext"
+            }
+          }
         }),
         resolve(),
         sourceMaps(),
@@ -42,9 +34,9 @@ function createConfig(pkg) {
 }
 
 const config = [
-  ...createConfig("react-spring-tiny"),
+  ...createConfig("core"),
   ...createConfig("react"),
-  ...createConfig("preact"),
+  ...createConfig("preact")
 ];
 
 export default config;
