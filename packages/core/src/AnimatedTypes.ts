@@ -18,5 +18,3 @@ export interface StylableAnimationFrame {
 }
 
 export type Converter = (v: AnimationFrame) => StylableAnimationFrame;
-
-export type RefFunction<T> = (initialValue: T) => { current: T };

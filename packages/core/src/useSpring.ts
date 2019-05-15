@@ -5,29 +5,29 @@ import {
   AnimationScene,
   Converter,
   InterpolatableAnimationFrame,
-  RefFunction
 } from "./AnimatedTypes";
 import { applyFramePropertyToElementStyle } from "./applyFramePropertyToElementStyle";
 
 export function useSpring(
   ref: any,
-  convert: Converter,
-  useRef: RefFunction<InterpolatableAnimationFrame>
+  convert: Converter
 ): (scene: AnimationScene) => void {
-  const internalFrame = useRef({});
+  const internalFrame: InterpolatableAnimationFrame = {};
   let isAnimating = false;
 
   function update(): void {
     // interpolate
-    for (const key in internalFrame.current) {
-      interpolateWithSpring(internalFrame.current[key]);
+    for (const key in internalFrame) {
+      interpolateWithSpring(internalFrame[key]);
     }
 
     // create value for apply Animation Style
     const r: AnimationFrame = {};
     let isFinish = true;
-    for (const [k, v] of Object.entries(internalFrame.current)) {
+    for (const [k, v] of Object.entries(internalFrame)) {
+      // @ts-ignore
       r[k] = v.value;
+      // @ts-ignore
       if (v.done !== true) isFinish = false;
     }
 
@@ -40,7 +40,7 @@ export function useSpring(
   }
 
   return (scene: AnimationScene): void => {
-    updateFrameFromScene(internalFrame.current, scene);
+    updateFrameFromScene(internalFrame, scene);
     if (!isAnimating) {
       window.requestAnimationFrame(update);
       isAnimating = true;
