@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "name": "preact-examples",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "per-env",
+    "start:production": "npm run -s serve",
+    "start:development": "npm run -s dev",
+    "build": "preact build",
+    "serve": "preact build && preact serve",
+    "dev": "preact watch",
+    "lint": "eslint src",
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-synacor"
+  },
+  "eslintIgnore": [
+    "build/*"
+  ],
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-config-synacor": "^2.0.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^21.2.1",
+    "per-env": "^1.0.2"
+  },
+  "dependencies": {
+    "preact": "^10.0.0-beta.1",
+    "preact-cli": "^3.0.0-next.19",
+    "preact-router": "^3.0.0",
+    "preact-spring-tiny": "^0.0.4"
+  }
+}

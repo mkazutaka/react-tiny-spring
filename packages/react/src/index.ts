@@ -1,5 +1,4 @@
-import { useSpring as useSpringInternal } from "../useSpring";
-import { Converter } from "../AnimatedTypes";
+import { useSpring as useSpringInternal, Converter } from "core-spring-tiny";
 import { useRef } from "react";
 
 const useSpring = (ref: any, convert: Converter) =>

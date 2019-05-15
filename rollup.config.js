@@ -3,24 +3,28 @@ import sourceMaps from "rollup-plugin-sourcemaps";
 import resolve from "rollup-plugin-node-resolve";
 import { sizeSnapshot } from "rollup-plugin-size-snapshot";
 
-import pkg from "./package.json";
+function createConfig(pkg) {
+  const input = `packages/${pkg}/src/index.ts`;
+  const output = `packages/${pkg}/dist/index`;
+  const tsconfig = `packages/${pkg}/tsconfig.json`;
 
-function createConfig(input, out) {
   return [
     {
       input: input,
       output: [
-        { file: `${out}.js`, format: `esm`, sourcemap: true },
-        { file: `${out}.cjs.js`, format: `cjs`, sourcemap: true }
+        { file: `${output}.esm.js`, format: `esm`, sourcemap: true },
+        { file: `${output}.cjs.js`, format: `cjs`, sourcemap: true }
       ],
-      external: [
-        "react",
-        "preact",
-        ...Object.keys(pkg.dependencies || {}),
-        ...Object.keys(pkg.peerDependencies || {})
-      ],
+      external: ["react", "preact"],
       plugins: [
-        typescript({ useTsconfigDeclarationDir: true }),
+        typescript({
+          tsconfig: `${tsconfig}`,
+          tsconfigOverride: {
+            compilerOptions: {
+              target: "esnext"
+            }
+          }
+        }),
         resolve(),
         sourceMaps(),
         sizeSnapshot()
@@ -30,8 +34,9 @@ function createConfig(input, out) {
 }
 
 const config = [
-  ...createConfig("./src/preact/index.ts", "preact/index"),
-  ...createConfig("./src/react/index.ts", "react/index")
+  ...createConfig("core"),
+  ...createConfig("react"),
+  ...createConfig("preact")
 ];
 
 export default config;

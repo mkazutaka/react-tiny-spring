@@ -74,5 +74,256 @@
         "code": 998
       }
     }
+  },
+  "./packages/react-spring-tiny/index.cjs.js": {
+    "bundled": 3584,
+    "minified": 1565,
+    "gzipped": 752
+  },
+  "./packages/react-spring-tiny/index.js": {
+    "bundled": 3496,
+    "minified": 1487,
+    "gzipped": 713,
+    "treeshaked": {
+      "rollup": {
+        "code": 0,
+        "import_statements": 0
+      },
+      "webpack": {
+        "code": 951
+      }
+    }
+  },
+  "./packages/react-spring-tiny/dist/index.cjs.js": {
+    "bundled": 3664,
+    "minified": 1475,
+    "gzipped": 725
+  },
+  "./packages/react-spring-tiny/dist/index.js": {
+    "bundled": 3787,
+    "minified": 1487,
+    "gzipped": 713,
+    "treeshaked": {
+      "rollup": {
+        "code": 0,
+        "import_statements": 0
+      },
+      "webpack": {
+        "code": 951
+      }
+    }
+  },
+  "./packages/react/index.cjs.js": {
+    "bundled": 4008,
+    "minified": 1660,
+    "gzipped": 791
+  },
+  "./packages/react/index.js": {
+    "bundled": 3929,
+    "minified": 1588,
+    "gzipped": 752,
+    "treeshaked": {
+      "rollup": {
+        "code": 14,
+        "import_statements": 14
+      },
+      "webpack": {
+        "code": 998
+      }
+    }
+  },
+  "./packages/preact/index.cjs.js": {
+    "bundled": 4726,
+    "minified": 2371,
+    "gzipped": 1052
+  },
+  "./packages/preact/index.js": {
+    "bundled": 4597,
+    "minified": 2249,
+    "gzipped": 1015,
+    "treeshaked": {
+      "rollup": {
+        "code": 464,
+        "import_statements": 33
+      },
+      "webpack": {
+        "code": 1486
+      }
+    }
+  },
+  "./packages/react/dist/index.cjs.js": {
+    "bundled": 3775,
+    "minified": 1557,
+    "gzipped": 762
+  },
+  "./packages/react/dist/index.js": {
+    "bundled": 3929,
+    "minified": 1588,
+    "gzipped": 752,
+    "treeshaked": {
+      "rollup": {
+        "code": 14,
+        "import_statements": 14
+      },
+      "webpack": {
+        "code": 998
+      }
+    }
+  },
+  "./packages/preact/dist/index.cjs.js": {
+    "bundled": 4493,
+    "minified": 2268,
+    "gzipped": 1038
+  },
+  "./packages/preact/dist/index.js": {
+    "bundled": 4597,
+    "minified": 2249,
+    "gzipped": 1015,
+    "treeshaked": {
+      "rollup": {
+        "code": 464,
+        "import_statements": 33
+      },
+      "webpack": {
+        "code": 1486
+      }
+    }
+  },
+  "./packages/react-spring-tiny/dist/index.esm.js": {
+    "bundled": 3576,
+    "minified": 1397,
+    "gzipped": 685,
+    "treeshaked": {
+      "rollup": {
+        "code": 0,
+        "import_statements": 0
+      },
+      "webpack": {
+        "code": 951
+      }
+    }
+  },
+  "./packages/react/dist/index.esm.js": {
+    "bundled": 3696,
+    "minified": 1485,
+    "gzipped": 721,
+    "treeshaked": {
+      "rollup": {
+        "code": 14,
+        "import_statements": 14
+      },
+      "webpack": {
+        "code": 998
+      }
+    }
+  },
+  "./packages/preact/dist/index.esm.js": {
+    "bundled": 4364,
+    "minified": 2146,
+    "gzipped": 1002,
+    "treeshaked": {
+      "rollup": {
+        "code": 464,
+        "import_statements": 33
+      },
+      "webpack": {
+        "code": 1486
+      }
+    }
+  },
+  "./packages/react-spring-tiny/src/dist/index.cjs.js": {
+    "bundled": 3664,
+    "minified": 1475,
+    "gzipped": 725
+  },
+  "./packages/react-spring-tiny/src/dist/index.esm.js": {
+    "bundled": 3576,
+    "minified": 1397,
+    "gzipped": 685,
+    "treeshaked": {
+      "rollup": {
+        "code": 0,
+        "import_statements": 0
+      },
+      "webpack": {
+        "code": 951
+      }
+    }
+  },
+  "./packages/core/dist/index.cjs.js": {
+    "bundled": 3664,
+    "minified": 1475,
+    "gzipped": 725
+  },
+  "./packages/core/dist/index.esm.js": {
+    "bundled": 3576,
+    "minified": 1397,
+    "gzipped": 685,
+    "treeshaked": {
+      "rollup": {
+        "code": 0,
+        "import_statements": 0
+      },
+      "webpack": {
+        "code": 951
+      }
+    }
+  },
+  "packages/core/dist/index.cjs.js": {
+    "bundled": 3934,
+    "minified": 1496,
+    "gzipped": 734
+  },
+  "packages/core/dist/index.esm.js": {
+    "bundled": 3846,
+    "minified": 1418,
+    "gzipped": 695,
+    "treeshaked": {
+      "rollup": {
+        "code": 0,
+        "import_statements": 0
+      },
+      "webpack": {
+        "code": 951
+      }
+    }
+  },
+  "packages/react/dist/index.cjs.js": {
+    "bundled": 4083,
+    "minified": 1578,
+    "gzipped": 772
+  },
+  "packages/react/dist/index.esm.js": {
+    "bundled": 4004,
+    "minified": 1506,
+    "gzipped": 731,
+    "treeshaked": {
+      "rollup": {
+        "code": 14,
+        "import_statements": 14
+      },
+      "webpack": {
+        "code": 998
+      }
+    }
+  },
+  "packages/preact/dist/index.cjs.js": {
+    "bundled": 4607,
+    "minified": 2289,
+    "gzipped": 1048
+  },
+  "packages/preact/dist/index.esm.js": {
+    "bundled": 4478,
+    "minified": 2167,
+    "gzipped": 1013,
+    "treeshaked": {
+      "rollup": {
+        "code": 464,
+        "import_statements": 33
+      },
+      "webpack": {
+        "code": 1486
+      }
+    }
   }
 }

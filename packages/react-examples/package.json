@@ -1,13 +1,12 @@
 {
-  "name": "react-gesture",
+  "name": "react-examples",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
-    "react-use-gesture": "^5.0.1",
-    "react-spring-tiny": "0.0.1"
+    "react-spring-tiny": "^0.0.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -29,7 +28,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
   }
 }
