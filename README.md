@@ -12,7 +12,18 @@ Currently, it is also an experimental library. We are asking for many opinions. 
 react-spring-tiny is provided by npm package. 
 
 ```shell
+# For react
 $ yarn add -D react-spring-tiny
+# For preact
+$ yarn add -D preact-spring-tiny
+```
+
+# Build Examples
+
+```
+$ git clone git@github.com:mkazutaka/react-spring-tiny.git
+$ yarn build
+$ yarn start:react
 ```
 
 # How to use

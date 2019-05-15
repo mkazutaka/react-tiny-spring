@@ -16,7 +16,8 @@
     "lint:fix": "yarn lint --fix",
     "test": "jest",
     "test:watch": "jest --watch",
-    "start:preact": "preact watch packages/preact-examples/src/"
+    "start:react": "cd packages/react-examples && yarn start",
+    "start:preact": "cd packages/preact-examples && yarn start"
   },
   "dependencies": {},
   "devDependencies": {

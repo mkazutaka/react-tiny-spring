@@ -270,12 +270,12 @@
     }
   },
   "packages/core/dist/index.cjs.js": {
-    "bundled": 3934,
+    "bundled": 3732,
     "minified": 1496,
     "gzipped": 734
   },
   "packages/core/dist/index.esm.js": {
-    "bundled": 3846,
+    "bundled": 3644,
     "minified": 1418,
     "gzipped": 695,
     "treeshaked": {
@@ -289,12 +289,12 @@
     }
   },
   "packages/react/dist/index.cjs.js": {
-    "bundled": 4083,
+    "bundled": 3843,
     "minified": 1578,
     "gzipped": 772
   },
   "packages/react/dist/index.esm.js": {
-    "bundled": 4004,
+    "bundled": 3764,
     "minified": 1506,
     "gzipped": 731,
     "treeshaked": {
@@ -308,12 +308,12 @@
     }
   },
   "packages/preact/dist/index.cjs.js": {
-    "bundled": 4607,
+    "bundled": 4561,
     "minified": 2289,
     "gzipped": 1048
   },
   "packages/preact/dist/index.esm.js": {
-    "bundled": 4478,
+    "bundled": 4432,
     "minified": 2167,
     "gzipped": 1013,
     "treeshaked": {
