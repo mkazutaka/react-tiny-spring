@@ -270,14 +270,14 @@
     }
   },
   "packages/core/dist/index.cjs.js": {
-    "bundled": 3670,
-    "minified": 1438,
-    "gzipped": 718
+    "bundled": 4055,
+    "minified": 1677,
+    "gzipped": 756
   },
   "packages/core/dist/index.esm.js": {
-    "bundled": 3582,
-    "minified": 1360,
-    "gzipped": 679,
+    "bundled": 3861,
+    "minified": 1499,
+    "gzipped": 705,
     "treeshaked": {
       "rollup": {
         "code": 0,
@@ -289,40 +289,40 @@
     }
   },
   "packages/react/dist/index.cjs.js": {
-    "bundled": 3736,
-    "minified": 1480,
-    "gzipped": 732
+    "bundled": 4054,
+    "minified": 1583,
+    "gzipped": 772
   },
   "packages/react/dist/index.esm.js": {
-    "bundled": 3661,
-    "minified": 1415,
-    "gzipped": 695,
+    "bundled": 3975,
+    "minified": 1511,
+    "gzipped": 731,
     "treeshaked": {
       "rollup": {
-        "code": 0,
-        "import_statements": 0
+        "code": 14,
+        "import_statements": 14
       },
       "webpack": {
-        "code": 951
+        "code": 998
       }
     }
   },
   "packages/preact/dist/index.cjs.js": {
-    "bundled": 3736,
-    "minified": 1480,
-    "gzipped": 732
+    "bundled": 4529,
+    "minified": 2294,
+    "gzipped": 1040
   },
   "packages/preact/dist/index.esm.js": {
-    "bundled": 3661,
-    "minified": 1415,
-    "gzipped": 695,
+    "bundled": 4400,
+    "minified": 2172,
+    "gzipped": 1001,
     "treeshaked": {
       "rollup": {
-        "code": 0,
-        "import_statements": 0
+        "code": 464,
+        "import_statements": 33
       },
       "webpack": {
-        "code": 951
+        "code": 1486
       }
     }
   }
