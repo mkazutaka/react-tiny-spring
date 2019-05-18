@@ -7,11 +7,13 @@
     "start": "per-env",
     "start:production": "npm run -s serve",
     "start:development": "npm run -s dev",
-    "build": "preact build",
-    "serve": "preact build && preact serve",
+    "build": "preact build --no-prerender",
+    "serve": "preact build --no-prerender && preact serve",
     "dev": "preact watch",
     "lint": "eslint src",
-    "test": "jest"
+    "test": "jest",
+    "now-build": "npm run build",
+    "now-publish": "now --target production build"
   },
   "eslintConfig": {
     "extends": "eslint-config-synacor"

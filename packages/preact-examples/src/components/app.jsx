@@ -1,6 +1,6 @@
 import { h, Component } from 'preact';
 
-import HelloWorld from './helloWorld'
+import HelloWorld from './HelloWorld'
 import PullBack from './PullBack';
 import SingleSlidingCard from './SingleSlidingCard';
 

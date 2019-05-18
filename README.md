@@ -26,11 +26,11 @@ $ yarn build
 $ yarn start:react
 ```
 
+# Exampels
+
+- [Preact Spring Tiny Examples](https://preact-spring-tiny-examples.mkazutaka.now.sh)
+
 # How to use
-
-see example.
-
-# Example
 
 ![leftright](https://user-images.githubusercontent.com/4601360/57581601-b809c100-74f4-11e9-9cb6-fa9b3793d6cc.gif)
 
