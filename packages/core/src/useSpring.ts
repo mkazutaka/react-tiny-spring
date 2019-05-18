@@ -32,7 +32,10 @@ export function useSpring(
 
   return (scene: AnimationScene): void => {
     updateFrameFromScene(internalFrame.current, scene);
-    internalFrame.current.sceneKeys = Object.keys(scene.to);
+
+    internalFrame.current.sceneKeys = internalFrame.current.sceneKeys
+      ? [...internalFrame.current.sceneKeys, ...Object.keys(scene.to)]
+      : Object.keys(scene.to);
     if (!isAnimating) {
       window.requestAnimationFrame(update);
       isAnimating = true;
