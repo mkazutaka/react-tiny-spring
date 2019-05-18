@@ -1,6 +1,6 @@
 {
   "name": "react-spring-tiny",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -16,8 +16,8 @@
     "test:watch": "jest --watch packages/react-spring-tiny/test"
   },
   "dependencies": {
-    "react": "^16.8.6",
-    "@types/react": "^16.8.17"
+    "@types/react": "^16.8.17",
+    "react": "^16.8.6"
   },
   "peerDependencies": {
     "core-spring-tiny": "^0.0.2"
