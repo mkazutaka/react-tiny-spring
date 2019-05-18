@@ -1,35 +1,26 @@
 import { updateFrameFromScene } from "./updateFrameFromScene";
 import { interpolateWithSpring } from "./interpolator/interpolateWithSpring";
-import {
-  AnimationFrame,
-  AnimationScene,
-  Converter,
-  InterpolatableAnimationFrame,
-} from "./AnimatedTypes";
+import { AnimationFrame, AnimationScene, Converter } from "./AnimatedTypes";
 import { applyFramePropertyToElementStyle } from "./applyFramePropertyToElementStyle";
 
 export function useSpring(
   ref: any,
-  convert: Converter
+  convert: Converter,
+  useRef: any
 ): (scene: AnimationScene) => void {
-  const internalFrame: InterpolatableAnimationFrame = {};
+  const internalFrame = useRef({});
   let isAnimating = false;
 
   function update(): void {
-    // interpolate
-    for (const key in internalFrame) {
-      interpolateWithSpring(internalFrame[key]);
-    }
-
-    // create value for apply Animation Style
     const r: AnimationFrame = {};
     let isFinish = true;
-    for (const [k, v] of Object.entries(internalFrame)) {
-      // @ts-ignore
-      r[k] = v.value;
-      // @ts-ignore
-      if (v.done !== true) isFinish = false;
-    }
+    internalFrame.current.sceneKeys.forEach((key: any) => {
+      interpolateWithSpring(internalFrame.current[key]);
+      r[key] = internalFrame.current[key].value;
+      if (internalFrame.current[key].done !== true) {
+        isFinish = false;
+      }
+    });
 
     if (isFinish) {
       isAnimating = false;
@@ -40,7 +31,11 @@ export function useSpring(
   }
 
   return (scene: AnimationScene): void => {
-    updateFrameFromScene(internalFrame, scene);
+    updateFrameFromScene(internalFrame.current, scene);
+
+    internalFrame.current.sceneKeys = internalFrame.current.sceneKeys
+      ? [...internalFrame.current.sceneKeys, ...Object.keys(scene.to)]
+      : Object.keys(scene.to);
     if (!isAnimating) {
       window.requestAnimationFrame(update);
       isAnimating = true;

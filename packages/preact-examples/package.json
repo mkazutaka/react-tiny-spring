@@ -7,11 +7,13 @@
     "start": "per-env",
     "start:production": "npm run -s serve",
     "start:development": "npm run -s dev",
-    "build": "preact build",
-    "serve": "preact build && preact serve",
+    "build": "preact build --no-prerender",
+    "serve": "preact build --no-prerender && preact serve",
     "dev": "preact watch",
     "lint": "eslint src",
-    "test": "jest"
+    "test": "jest",
+    "now-build": "npm run build",
+    "now-publish": "now --target production build"
   },
   "eslintConfig": {
     "extends": "eslint-config-synacor"
@@ -24,7 +26,9 @@
     "eslint-config-synacor": "^2.0.2",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^21.2.1",
-    "per-env": "^1.0.2"
+    "per-env": "^1.0.2",
+    "preact-render-to-string": "^5.0.3",
+    "react-use-gesture": "^5.0.1"
   },
   "dependencies": {
     "preact": "^10.0.0-beta.1",
