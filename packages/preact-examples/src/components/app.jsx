@@ -2,7 +2,8 @@ import { h, Component } from 'preact';
 
 import HelloWorld from './HelloWorld'
 import PullBack from './PullBack';
-import SingleSlidingCard from './SingleSlidingCard';
+import SlidingDeck from './SlidingDeck';
+import InfinitySlide from './InfinitySlide';
 
 export default class App extends Component {
 
@@ -11,7 +12,8 @@ export default class App extends Component {
 			<div id="app">
 				<HelloWorld />
 				<PullBack />
-				<SingleSlidingCard />
+				<SlidingDeck />
+				<InfinitySlide />
 			</div>
 		);
 	}
