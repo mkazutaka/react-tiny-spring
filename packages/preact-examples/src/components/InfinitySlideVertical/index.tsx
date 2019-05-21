@@ -58,6 +58,18 @@ export default function SlidingDeck() {
     });
   }, [animates]);
 
+  useEffect(() => {
+    refs.map(ref => {
+      ref.current.addEventListener(
+        'touchmove',
+        ev => {
+          ev.preventDefault();
+        },
+        { passive: false }
+      );
+    });
+  }, []);
+
   const bind = useGesture(
     ({ down, delta: [xDelta, yDelta], direction: [xDir, yDir], velocity }) => {
       const trigger = velocity > 0.3;

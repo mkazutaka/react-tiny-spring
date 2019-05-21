@@ -1,4 +1,4 @@
-import { useRef } from 'preact/hooks';
+import { useRef, useEffect } from 'preact/hooks';
 import { useSpring } from 'react-spring-tiny';
 import { useGesture } from 'react-use-gesture';
 
@@ -14,6 +14,16 @@ export default function Drag() {
   const animate = useSpring(ref, v => ({
     transform: `translate3d(${v.x}px,${v.y}px,0)`
   }));
+
+  useEffect(() => {
+    ref.current.addEventListener(
+      'touchmove',
+      ev => {
+        ev.preventDefault();
+      },
+      { passive: false }
+    );
+  }, []);
 
   const bind = useGesture({
     onDrag: ({ delta }) => animate({ to: { x: delta[0], y: delta[1] } }),

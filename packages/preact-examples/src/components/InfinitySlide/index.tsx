@@ -54,6 +54,16 @@ function Card() {
     }
   );
   useEffect(() => {
+    ref.current.addEventListener(
+      'touchmove',
+      ev => {
+        ev.preventDefault();
+      },
+      { passive: false }
+    );
+  }, []);
+
+  useEffect(() => {
     animate({
       from: { x: 0, rot: 0, scale: 1.5, y: -1000 },
       to: { x: 0, y: 0, scale: 1, r: -10 + Math.random() * 20, opacity: 1 }

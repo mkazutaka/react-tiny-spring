@@ -2,11 +2,11 @@ import {
   InterpolatorConfig,
   InterpolatorProperty,
   AnimatedTimer
-} from "./interpolatorTypes";
+} from './interpolatorTypes';
 import {
   defaultAnimationConfig,
   defaultTimer
-} from "./interpolatorDefaultValues";
+} from './interpolatorDefaultValues';
 
 export function interpolateWithSpring(
   property: InterpolatorProperty,
