@@ -1,4 +1,4 @@
-import { StylableAnimationFrame } from "./AnimatedTypes";
+import { StylableAnimationFrame } from './AnimatedTypes';
 
 export function applyFramePropertyToElementStyle(
   style: StylableAnimationFrame,

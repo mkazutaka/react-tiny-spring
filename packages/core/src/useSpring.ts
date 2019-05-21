@@ -1,7 +1,7 @@
-import { updateFrameFromScene } from "./updateFrameFromScene";
-import { interpolateWithSpring } from "./interpolator/interpolateWithSpring";
-import { AnimationFrame, AnimationScene, Converter } from "./AnimatedTypes";
-import { applyFramePropertyToElementStyle } from "./applyFramePropertyToElementStyle";
+import { updateFrameFromScene } from './updateFrameFromScene';
+import { interpolateWithSpring } from './interpolator/interpolateWithSpring';
+import { AnimationFrame, AnimationScene, Converter } from './AnimatedTypes';
+import { applyFramePropertyToElementStyle } from './applyFramePropertyToElementStyle';
 
 export function useSpring(
   ref: any,

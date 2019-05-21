@@ -1,4 +1,4 @@
-import { AnimationScene, InterpolatableAnimationFrame } from "./AnimatedTypes";
+import { AnimationScene, InterpolatableAnimationFrame } from './AnimatedTypes';
 
 type Now = () => number;
 

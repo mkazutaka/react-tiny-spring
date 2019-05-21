@@ -12,8 +12,10 @@
   "scripts": {
     "build": "rollup -c",
     "watch": "rollup -c -w",
-    "lint": "eslint packages/**/src/** --ext .ts,.tsx",
+    "lint": "eslint -c .eslintrc 'packages/core/src/**' 'packages/react/src/**' 'packages/preact/src/**' --ext .ts,.tsx",
     "lint:fix": "yarn lint --fix",
+    "lint:example": "eslint -c .eslintrc packages/preact-examples/src/components/** --ext .ts,.tsx",
+    "lint:example:fix": "yarn lint:example --fix",
     "test": "jest",
     "test:watch": "jest --watch",
     "start:react": "cd packages/react-examples && yarn start",
@@ -24,7 +26,7 @@
     "@types/jest": "^24.0.12",
     "@types/node": "^12.0.0",
     "@typescript-eslint/eslint-plugin": "^1.7.0",
-    "@typescript-eslint/parser": "^1.7.0",
+    "@typescript-eslint/parser": "^1.9.0",
     "@typescript-eslint/typescript-estree": "^1.7.0",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.2.0",
@@ -33,6 +35,7 @@
     "jest": "^24.8.0",
     "lerna": "^3.13.4",
     "prettier": "^1.17.1",
+    "prettier-eslint": "^8.8.2",
     "rollup": "^1.11.3",
     "rollup-plugin-node-resolve": "^4.2.3",
     "rollup-plugin-size-snapshot": "^0.8.0",
@@ -46,5 +49,10 @@
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
     }
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2
   }
 }

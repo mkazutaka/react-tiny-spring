@@ -1,4 +1,4 @@
-import { InterpolatorProperty } from "./interpolator/interpolatorTypes";
+import { InterpolatorProperty } from './interpolator/interpolatorTypes';
 
 export interface AnimationScene {
   from?: AnimationFrame;

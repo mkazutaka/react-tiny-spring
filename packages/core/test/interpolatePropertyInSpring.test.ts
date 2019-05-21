@@ -1,7 +1,7 @@
-import { interpolateWithSpring } from "../src/interpolator/interpolateWithSpring";
+import { interpolateWithSpring } from '../src/interpolator/interpolateWithSpring';
 
-describe("Animation", () => {
-  it("spring Interpolator", () => {
+describe('Animation', () => {
+  it('spring Interpolator', () => {
     const now = () => 11;
     const lastTime = 10;
     let property = {

@@ -1,4 +1,4 @@
-import { updateFrameFromScene } from "../src/updateFrameFromScene";
+import { updateFrameFromScene } from '../src/updateFrameFromScene';
 
 const defaultProperty = {
   value: 0,
@@ -10,7 +10,7 @@ const defaultProperty = {
   done: false
 };
 
-describe("updateFrameFromScene", () => {
+describe('updateFrameFromScene', () => {
   it('scene has "from" and "to" value', () => {
     const scene: any = { from: { x: 10, y: 20 }, to: { x: 100, y: 200 } };
     const frame: any = {
@@ -53,7 +53,7 @@ describe("updateFrameFromScene", () => {
     expect(expectFrame).toEqual(frame);
   });
 
-  it("scene has part of from value", () => {
+  it('scene has part of from value', () => {
     const now = () => 0;
     const scene = { from: { y: 20 }, to: { x: 100, y: 100 } };
     const frame: any = {
@@ -68,7 +68,7 @@ describe("updateFrameFromScene", () => {
     expect(expectFrame).toEqual(frame);
   });
 
-  it("scene has part of to value", () => {
+  it('scene has part of to value', () => {
     const now = () => 0;
     const scene = { from: { x: 10, y: 10 }, to: { x: 100 } };
     const frame: any = {
@@ -83,7 +83,7 @@ describe("updateFrameFromScene", () => {
     expect(expectFrame).toEqual(frame);
   });
 
-  it("continuous scene", () => {
+  it('continuous scene', () => {
     const now = () => 10;
     const scene = { to: { x: 100, y: 100 } };
     const frame = {
