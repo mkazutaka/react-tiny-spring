@@ -1,8 +1,8 @@
-import { useRef, useEffect } from "preact/hooks";
-import { useSpring } from "react-spring-tiny";
+import { useRef, useEffect } from 'preact/hooks';
+import { useSpring } from 'react-spring-tiny';
 
 const logo =
-  "https://user-images.githubusercontent.com/4601360/57931070-99d80280-78f2-11e9-86de-0a6a5d5fbe30.png";
+  'https://user-images.githubusercontent.com/4601360/57931070-99d80280-78f2-11e9-86de-0a6a5d5fbe30.png';
 
 export default function HelloWorld() {
   const ref = useRef(null);
@@ -23,15 +23,15 @@ export default function HelloWorld() {
   }, [animateLeftRight]);
 
   return (
-		<div className="container">
-			<h3 className="container-title">HelloWorld</h3>
+    <div className="container">
+      <h3 className="container-title">HelloWorld</h3>
       <div className="container-main">
         <div ref={ref}>
           <img
             src={logo}
             className="container-image"
             alt="logo"
-            style={{ height: "7em", width: "7em" }}
+            style={{ height: '7em', width: '7em' }}
           />
         </div>
       </div>
