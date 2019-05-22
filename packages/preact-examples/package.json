@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "preact-examples",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "scripts": {
     "start": "per-env",
@@ -34,6 +34,6 @@
     "preact": "^10.0.0-beta.1",
     "preact-cli": "^3.0.0-next.19",
     "preact-router": "^3.0.0",
-    "preact-tiny-spring": "^0.0.1"
+    "preact-tiny-spring": "^0.0.2"
   }
 }
