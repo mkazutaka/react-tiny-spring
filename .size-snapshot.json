@@ -1,0 +1,59 @@
+{
+  "packages/core-tiny-spring/dist/index.cjs.js": {
+    "bundled": 3962,
+    "minified": 1743,
+    "gzipped": 770
+  },
+  "packages/core-tiny-spring/dist/index.esm.js": {
+    "bundled": 3768,
+    "minified": 1565,
+    "gzipped": 718,
+    "treeshaked": {
+      "rollup": {
+        "code": 0,
+        "import_statements": 0
+      },
+      "webpack": {
+        "code": 951
+      }
+    }
+  },
+  "packages/react-tiny-spring/dist/index.cjs.js": {
+    "bundled": 3888,
+    "minified": 1649,
+    "gzipped": 790
+  },
+  "packages/react-tiny-spring/dist/index.esm.js": {
+    "bundled": 3809,
+    "minified": 1577,
+    "gzipped": 747,
+    "treeshaked": {
+      "rollup": {
+        "code": 14,
+        "import_statements": 14
+      },
+      "webpack": {
+        "code": 998
+      }
+    }
+  },
+  "packages/preact-tiny-spring/dist/index.cjs.js": {
+    "bundled": 4606,
+    "minified": 2360,
+    "gzipped": 1055
+  },
+  "packages/preact-tiny-spring/dist/index.esm.js": {
+    "bundled": 4477,
+    "minified": 2238,
+    "gzipped": 1013,
+    "treeshaked": {
+      "rollup": {
+        "code": 464,
+        "import_statements": 33
+      },
+      "webpack": {
+        "code": 1486
+      }
+    }
+  }
+}

@@ -21,6 +21,6 @@
     "preact": "^10.0.0-beta.1"
   },
   "peerDependencies": {
-    "core-tiny-spring": "^0.0.2"
+    "core-tiny-spring": "^0.0.1"
   }
 }

@@ -22,6 +22,7 @@ $ yarn add -D preact-tiny-spring
 
 ```
 $ git clone git@github.com:mkazutaka/react-tiny-spring.git
+$ yarn install
 $ yarn build
 $ yarn start:react
 ```
