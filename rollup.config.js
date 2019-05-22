@@ -34,9 +34,9 @@ function createConfig(pkg) {
 }
 
 const config = [
-  ...createConfig("core"),
-  ...createConfig("react"),
-  ...createConfig("preact")
+  ...createConfig("core-tiny-spring"),
+  ...createConfig("react-tiny-spring"),
+  ...createConfig("preact-tiny-spring")
 ];
 
 export default config;

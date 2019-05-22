@@ -1,6 +1,6 @@
-# react-spring-tiny
+# react-tiny-spring
 
-react-spring-tiny is an animation library for React or Preact users.
+react-tiny-spring is an animation library for React or Preact users.
 
 - :bicyclist: Spring Animation can be realized in 1kb
 - :revolving_hearts: Do not need the original component like `<Animated>`
@@ -9,33 +9,33 @@ react-spring-tiny is an animation library for React or Preact users.
 Currently, it is also an experimental library. We are asking for many opinions. Please watch if you are interested.
 
 # Installation
-react-spring-tiny is provided by npm package. 
+react-tiny-spring is provided by npm package. 
 
 ```shell
 # For react
-$ yarn add -D react-spring-tiny
+$ yarn add -D react-tiny-spring
 # For preact
-$ yarn add -D preact-spring-tiny
+$ yarn add -D preact-tiny-spring
 ```
 
 # Build Examples
 
 ```
-$ git clone git@github.com:mkazutaka/react-spring-tiny.git
+$ git clone git@github.com:mkazutaka/react-tiny-spring.git
 $ yarn build
 $ yarn start:react
 ```
 
 # Exampels
 
-- [Preact Spring Tiny Examples](https://preact-spring-tiny-examples.mkazutaka.now.sh)
+- [Preact Spring Tiny Examples](https://preact-tiny-spring-examples.mkazutaka.now.sh)
 
 # How to use
 
 ![leftright](https://user-images.githubusercontent.com/4601360/57581601-b809c100-74f4-11e9-9cb6-fa9b3793d6cc.gif)
 
 ```javascript
-import { useSpring } from 'react-spring-tiny'
+import { useSpring } from 'react-tiny-spring'
 
 const App = () => {
   const ref = useRef(null);

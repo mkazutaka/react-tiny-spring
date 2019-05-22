@@ -1,6 +1,6 @@
 {
-  "name": "react-spring-tiny",
-  "version": "0.0.5",
+  "name": "react-tiny-spring",
+  "version": "0.0.1",
   "description": "",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -10,16 +10,16 @@
   "scripts": {
     "build": "rollup -c",
     "watch": "tsc -w",
-    "lint": "eslint packages/react-spring-tiny/src/** --ext .ts,.tsx",
+    "lint": "eslint packages/react-tiny-spring/src/** --ext .ts,.tsx",
     "lint:fix": "yarn lint --fix",
-    "test": "jest packages/react-spring-tiny/test",
-    "test:watch": "jest --watch packages/react-spring-tiny/test"
+    "test": "jest packages/react-tiny-spring/test",
+    "test:watch": "jest --watch packages/react-tiny-spring/test"
   },
   "dependencies": {
     "@types/react": "^16.8.17",
     "react": "^16.8.6"
   },
   "peerDependencies": {
-    "core-spring-tiny": "^0.0.2"
+    "core-tiny-spring": "^0.0.1"
   }
 }

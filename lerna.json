@@ -1,8 +1,8 @@
 {
   "packages": [
-    "packages/core",
-    "packages/preact",
-    "packages/react"
+    "packages/core-tiny-spring",
+    "packages/preact-tiny-spring",
+    "packages/react-tiny-spring"
   ],
   "npmClient": "yarn",
   "useWorkspaces": true,

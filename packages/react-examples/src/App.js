@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import { useRef, useEffect } from "react";
-import { useSpring } from "react-spring-tiny";
+import { useSpring } from "react-tiny-spring";
 
 function App() {
   const ref = useRef(null);

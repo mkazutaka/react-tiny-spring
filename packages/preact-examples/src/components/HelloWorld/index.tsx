@@ -1,5 +1,5 @@
 import { useRef, useEffect } from 'preact/hooks';
-import { useSpring } from 'react-spring-tiny';
+import { useSpring } from 'preact-tiny-spring';
 
 const logo =
   'https://user-images.githubusercontent.com/4601360/57931070-99d80280-78f2-11e9-86de-0a6a5d5fbe30.png';
