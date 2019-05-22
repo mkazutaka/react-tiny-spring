@@ -1,5 +1,5 @@
 import { useRef, useEffect } from 'preact/hooks';
-import { useSpring } from 'react-spring-tiny';
+import { useSpring } from 'react-tiny-spring';
 import { useGesture } from 'react-use-gesture';
 
 const style = {

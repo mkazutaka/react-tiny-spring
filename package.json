@@ -12,7 +12,7 @@
   "scripts": {
     "build": "rollup -c",
     "watch": "rollup -c -w",
-    "lint": "eslint -c .eslintrc 'packages/core/src/**' 'packages/react/src/**' 'packages/preact/src/**' --ext .ts,.tsx",
+    "lint": "eslint -c .eslintrc 'packages/core-tiny-spring/src/**' 'packages/react-tiny-spring/src/**' 'packages/preact-tiny-spring/src/**' --ext .ts,.tsx",
     "lint:fix": "yarn lint --fix",
     "lint:example": "eslint -c .eslintrc packages/preact-examples/src/components/** --ext .ts,.tsx",
     "lint:example:fix": "yarn lint:example --fix",

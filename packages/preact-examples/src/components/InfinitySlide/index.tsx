@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState } from 'preact/hooks';
-import { useSpring } from 'preact-spring-tiny';
+import { useSpring } from 'preact-tiny-spring';
 import { useGesture } from 'react-use-gesture';
 
 const cards = [
